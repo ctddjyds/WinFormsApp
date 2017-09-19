@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ConcurrentProgrammingApplication
+namespace WinFormCharpWebCam
 {
     static class Program
     {
@@ -16,7 +15,7 @@ namespace ConcurrentProgrammingApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConcurrentProgramForm());
+            Application.Run(new mainWinForm());
         }
     }
 }

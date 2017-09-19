@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tip85
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip85Task
     {
         //static void Main(string[] args)
         //{
@@ -114,7 +114,7 @@ namespace Tip85
         //    }
         //}
 
-        static void Main()
+        public static void TestTask()
         {
             TaskScheduler.UnobservedTaskException += new EventHandler<UnobservedTaskExceptionEventArgs>(TaskScheduler_UnobservedTaskException);
             Task t = new Task(() =>

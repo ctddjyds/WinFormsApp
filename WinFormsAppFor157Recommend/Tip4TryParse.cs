@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 
-namespace Tip4
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip4TryParse
     {
-        static void Main(string[] args)
+        public static void TryParseTest()
         {
             double re;
             long ticks;

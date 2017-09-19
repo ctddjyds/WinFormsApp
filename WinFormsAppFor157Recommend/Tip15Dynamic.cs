@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 
-namespace Tip15
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip15Dynamic
     {
-        static void Main(string[] args)
+        public static void DynamicTest()
         {
             int times = 1000000;
             DynamicSample reflectSample = new DynamicSample();

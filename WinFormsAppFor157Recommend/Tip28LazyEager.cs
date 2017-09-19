@@ -5,11 +5,11 @@ using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 
-namespace Tip28
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    class Tip28LazyEager
     {
-        static void Main(string[] args)
+        public static void LazyEagerTest()
         {
             //List<int> list = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             //var temp1 = from c in list where c > 5 select c;

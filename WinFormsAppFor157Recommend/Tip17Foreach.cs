@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Tip17
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip17Foreach
     {
-        static void Main(string[] args)
+        public static void ForeachTest()
         {
             //使用接口IMyEnumerable代替MyList
             IMyEnumerable list = new MyList();

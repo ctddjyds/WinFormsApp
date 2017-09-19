@@ -16,6 +16,48 @@ namespace WinFormsAppFor157Recommend
             Console.WriteLine(m_PersonValuesDic.ContainsKey(mike));
         }
 
+        public static void ValueTypeOperateEquals()
+        {
+            int i = 1;
+            int j = 1;
+            //True
+            Console.WriteLine(i == j);
+            j = i;
+            //True
+            Console.WriteLine(i == j);
+        }
+        public static void ReferenceTypeOPerateEquals()
+        {
+            object a = 1;
+            object b = 1;
+            //False
+            Console.WriteLine(a == b);
+            b = a;
+            //True
+            Console.WriteLine(a == b);
+        }
+        public static void ValueTypeEquals()
+        {
+            int i = 1;
+            int j = 1;
+            //True
+            Console.WriteLine(i.Equals(j));
+            j = i;
+            //True
+            Console.WriteLine(i.Equals(j));
+        }
+
+        public static void ReferenceTypeEquals()
+        {
+            object a = new Person("NB123");
+            object b = new Person("NB123");
+            //False
+            Console.WriteLine(a.Equals(b));
+            b = a;
+            //True
+            Console.WriteLine(a.Equals(b));
+        }
+
         private void AddAPerson()
         {
             Person mike = new Person("NB123");

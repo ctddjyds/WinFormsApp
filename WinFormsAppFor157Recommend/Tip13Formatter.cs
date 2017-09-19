@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Tip13
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip13Formatter
     {
-        static void Main(string[] args)
+        public static void FormatterTest()
         {
-            //Person person = new Person() { FirstName = "Jessica", LastName = "Hu", IDCode = "NB123" };
+            //SimplePerson person = new SimplePerson() { FirstName = "Jessica", LastName = "Hu", IDCode = "NB123" };
             //Console.WriteLine(person.ToString());
             //PersonFomatter pFormatter = new PersonFomatter();
             //Console.WriteLine(pFormatter.Format("Ch", person, null));
             //Console.WriteLine(pFormatter.Format("Eg", person, null));
             //Console.WriteLine(pFormatter.Format("ChM", person, null));
 
-            Person person = new Person() { FirstName = "Jessica", LastName = "Hu", IDCode = "NB123" };
+            SimplePerson person = new SimplePerson() { FirstName = "Jessica", LastName = "Hu", IDCode = "NB123" };
             Console.WriteLine(person.ToString());
             PersonFomatter pFormatter = new PersonFomatter();
             //第一类格式化输出语法
@@ -58,14 +58,7 @@ namespace Tip13
     //    }
     //}
 
-    //class Person
-    //{
-    //    public string IDCode { get; set; }
-    //    public string FirstName { get; set; }
-    //    public string LastName { get; set; }
-    //}
-
-    class Person : IFormattable
+    class SimplePerson : IFormattable
     {
         public string IDCode { get; set; }
         public string FirstName { get; set; }
@@ -119,7 +112,7 @@ namespace Tip13
 
         public string Format(string format, object arg, IFormatProvider formatProvider)
         {
-            Person person = arg as Person;
+            SimplePerson person = arg as SimplePerson;
             if (person == null)
             {
                 return string.Empty;

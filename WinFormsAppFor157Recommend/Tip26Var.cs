@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Tip26
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip26Var
     {
-        static void Main(string[] args)
+        public  static void VarTest()
         {
             //为了演示需要companyList并不从数据库读取，而是直接赋值
             List<Company> companyList = new List<Company>()
@@ -31,18 +31,19 @@ namespace Tip26
                 Console.WriteLine(string.Format("{0}\t:{1}", item.PersonName, item.CompanyName));
             }
         }
+        class Person
+        {
+            public string Name { get; set; }
+            public int CompanyID { get; set; }
+        }
+
+        class Company
+        {
+            public int ComanyID { get; set; }
+            public string Name { get; set; }
+        }
     }
 
-    class Person
-    {
-        public string Name { get; set; }
-        public int CompanyID { get; set; }
-    }
-
-    class Company
-    {
-        public int ComanyID { get; set; }
-        public string Name { get; set; }
-    }
+    
 
 }

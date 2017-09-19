@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 
-namespace Tip110
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip110Enum
     {
         //static void Main(string[] args)
         //{
@@ -55,7 +55,7 @@ namespace Tip110
         //    }
         //}
 
-        static void Main(string[] args)
+        public static void EnumTest()
         {
             Console.WriteLine(Week.Monday);
         }

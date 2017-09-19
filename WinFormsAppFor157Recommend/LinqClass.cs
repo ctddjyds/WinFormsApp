@@ -7,6 +7,16 @@ using System.Text;
 
 namespace WinFormsAppFor157Recommend
 {
+    /// <summary>
+    //Linq查询方法提供两类扩展方法：（Iqueryable<T>接口继承了IEnumerable<T>接口）
+    //Enumerable类：针对继承了IEnumerable<T> 接口的集合类进行扩展；
+    //Queryable类：针对继承了Iqueryable<T> 接口的集合类进行了扩展；
+    //设计两套接口的原因为了区别对待LINQ to OBJECTS和LINQ to SQL,两者的查询处理内部使用完全不同的机制；
+    //LINQ to OBJECTS使用 Enumerable中的扩展方法对本地集合进行排序和查询等操作，查询参数接受的是Func<>.
+    //LINQ to SQL使用Queryable中的扩展方法，接受的参数是Expression<>(用于包装Func<>)
+    //建议本地数据源用IEnumerable<T>，远程数据源用Iqueryable<T>；
+    //注意点：IEnumerable<T> 查询逻辑可以直接用我们自定义的方法，而IQueryable<T> 则不能使用自定义的方法，必须先生成表达式树；
+    /// </summary>
     public class LinqClass
     {
         /// <summary>

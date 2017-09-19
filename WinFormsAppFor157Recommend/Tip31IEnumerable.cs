@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 
-namespace Tip31
+namespace WinFormsAppFor157Recommend
 {
-    class Program
+    public class Tip31IEnumerable
     {
-        static void Main(string[] args)
+        public static void IEnumerableTest()
         {
             MyList list = new MyList();
             var temp = (from c in list where c.Age == 20 select c).ToList();
@@ -72,12 +72,6 @@ namespace Tip31
         }
 
         #endregion
-    }
-
-    class Person
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
     }
 
 }

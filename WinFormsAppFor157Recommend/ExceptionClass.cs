@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Tip61
@@ -127,7 +128,19 @@ namespace Tip61
             }
             Console.WriteLine(watch.ElapsedMilliseconds.ToString());
             Console.ReadKey();
-        }      
+        }  
+        public void TestPaperEncryptException()
+        {
+            try
+            {
+                throw new PaperEncryptException("加密试卷失败", "学生ID：123456");
+            }
+            catch (PaperEncryptException err)
+            {
+
+                Console.WriteLine(err.Message);
+            }
+        }
     }
     public class User
     {
@@ -136,5 +149,37 @@ namespace Tip61
         public string Name { get; set; }
 
         public DateTime BirthDay { get; set; }
+    }
+    [global::System.Serializable]
+    public class PaperEncryptException : Exception, ISerializable
+    {
+        private readonly string _paperInfo;
+        public PaperEncryptException() { }
+        public PaperEncryptException(string message) : base(message) { }
+        public PaperEncryptException(string message, Exception inner) : base(message, inner) { }
+        public PaperEncryptException(string message, string paperInfo)
+            : base(message)
+        {
+            _paperInfo = paperInfo;
+        }
+        public PaperEncryptException(string message, string paperInfo, Exception inner)
+            : base(message, inner)
+        {
+            _paperInfo = paperInfo;
+        }
+        protected PaperEncryptException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+
+        public override string Message
+        {
+            get
+            {
+                return base.Message + " " + _paperInfo;
+            }
+        }
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("Args", _paperInfo);
+            base.GetObjectData(info, context);
+        }
     }
 }
