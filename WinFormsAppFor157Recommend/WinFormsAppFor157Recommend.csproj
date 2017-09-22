@@ -65,7 +65,7 @@
     <Compile Include="Tip22CollectionThreadSafe.cs" />
     <Compile Include="CovariantContravariantClass.cs" />
     <Compile Include="DelegateEventClass.cs" />
-    <Compile Include="DisposeManageClass.cs" />
+    <Compile Include="MemoryDisposeManageClass.cs" />
     <Compile Include="DynamicJson.cs" />
     <Compile Include="DynamicJsonHelper.cs" />
     <Compile Include="Tip14EmployeeClone.cs" />

@@ -15,7 +15,7 @@ namespace WinFormsAppFor157Recommend
     /// 这时对象才真正被标记为垃圾，并且在下一次调用GC时才会释放对象占用的内存
     /// 可以看到Dispose模式的类型对象，至少需要两次GC才能真正回收掉对象内存
     /// </summary>
-    public class DisposeManageClass : IDisposable
+    public class MemoryDisposeManageClass : IDisposable
     {
         //定义一个非托管资源
         private IntPtr m_nativeResource = Marshal.AllocHGlobal(100);
@@ -30,7 +30,7 @@ namespace WinFormsAppFor157Recommend
         {
             //必须为true
             Dispose(true);
-            //通知垃圾回收机制不再调用终结器（析构器）
+            //通知垃圾回收机制不再调用终结器（析构器）Finalize
             GC.SuppressFinalize(this);
         }
         /// <summary>
@@ -43,7 +43,7 @@ namespace WinFormsAppFor157Recommend
         /// <summary>
         /// 析构器，必须有，防止忘记显式的调用Dispose方法
         /// </summary>
-        ~DisposeManageClass()
+        ~MemoryDisposeManageClass()
         {
             //必须为fase
             Dispose(false);
@@ -90,7 +90,7 @@ namespace WinFormsAppFor157Recommend
     /// <summary>
     /// 基于类的继承
     /// </summary>
-    public class DerivedSampleClass : DisposeManageClass
+    public class DerivedSampleClass : MemoryDisposeManageClass
     {
         //子类的非托管资源
         private IntPtr derivedNativeResource = Marshal.AllocHGlobal(100);

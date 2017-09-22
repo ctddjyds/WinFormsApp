@@ -63,10 +63,11 @@ namespace WinFormsAppFor157Recommend
         public string Name { get; set; }
     }
     /// <summary>
-    /// implicit关键字用于声明隐式的用户定义类型转换运算符(explicit反之)
-    /// static implicit operator target_type(source_type identifier){}
+    /// implicit关键字用于声明隐式转换的用户定义类型转换运算符(explicit反之,必须由用户强制指定才能执行)
+    /// public static implicit operator target_type(source_type identifier){}
     /// 隐式转换可以通过消除不必要的类型转换来提高源代码的可读性。但是，因为可以在未指定的情况下发生隐式转换，因此必须注意防止令人不愉快的后果。
-    /// 一般情况下，隐式转换运算符应当从不引发异常并且从不丢失信息，以便可以在不知晓的情况下安全使用它们。如果转换运算符不能满足那些条件，则应将其标记为 explicit。 
+    /// 一般情况下，隐式转换应当从不引发异常并且从不丢失信息，以便可以在不知晓的情况下安全使用它们。
+    /// 如果转换运算符不能满足以上条件，则应将其标记为 explicit。 
     /// </summary>
     public class SecondType
     {
