@@ -18,6 +18,7 @@ namespace WinFormsAppFor157Recommend
         public DepartmentClass Department { get; set; }
         public object Clone()
         {
+            //MemberwiseClone初始化一个新的对象，并遍历源对象的所有实例字段，然后值类型字段复制值副本，而引用对象只复制了引用地址
             return this.MemberwiseClone();
         }
         /// <summary>
