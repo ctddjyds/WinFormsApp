@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppFor157Recommend", "WinFormsAppFor157Recommend\WinFormsAppFor157Recommend.csproj", "{03CE5F2A-5152-484F-B49E-2EF60DADE4FD}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworkTestingV2", "NeuralNetworkTesting\NeuralNetworkTestingV2.csproj", "{DC202F12-30A7-4C24-9CAC-FE26C4198EF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTPWinFormApp", "FTPWinFormApp\FTPWinFormApp.csproj", "{04965966-D871-4F5F-AB29-22152AF2B034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmingBarCodeApp", "XmingBarCodeApp\XmingBarCodeApp.csproj", "{6641560F-94EB-4C16-8352-BABD7EAFE2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDependencyApp", "SqlDependencyApp\SqlDependencyApp.csproj", "{D75247AF-1BE3-48B7-8547-A3619CFAE16B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{04965966-D871-4F5F-AB29-22152AF2B034}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04965966-D871-4F5F-AB29-22152AF2B034}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04965966-D871-4F5F-AB29-22152AF2B034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6641560F-94EB-4C16-8352-BABD7EAFE2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6641560F-94EB-4C16-8352-BABD7EAFE2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6641560F-94EB-4C16-8352-BABD7EAFE2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6641560F-94EB-4C16-8352-BABD7EAFE2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
