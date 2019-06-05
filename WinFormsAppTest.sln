@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmingBarCodeApp", "XmingBar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDependencyApp", "SqlDependencyApp\SqlDependencyApp.csproj", "{D75247AF-1BE3-48B7-8547-A3619CFAE16B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNettyApplication", "DotNettyApplication\DotNettyApplication.csproj", "{803217F5-FBDF-4259-886E-506249D7AFAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D75247AF-1BE3-48B7-8547-A3619CFAE16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803217F5-FBDF-4259-886E-506249D7AFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803217F5-FBDF-4259-886E-506249D7AFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803217F5-FBDF-4259-886E-506249D7AFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803217F5-FBDF-4259-886E-506249D7AFAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
